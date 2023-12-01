@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body id="body">
+    <ul class="skip-links">
+      <li>
+        <a class="skip-links__link" href="#header">Skip to main navigation</a>
+      </li>
+      <li>
+        <a class="skip-links__link" href="#main">Skip to main content</a>
+      </li>
+      <li>
+        <a class="skip-links__link" href="#footer">Skip to footer navigation</a>
+      </li>
+    </ul>
+
+    <header class="navbar" id="header">
+      <div class="container">
+        <a href="index.html" class="navbar__logo">
+          <svg
+            viewBox="0 0 200 200"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mark Corbin</title>
+            <path
+              class="logo-border"
+              d="M15.8975 51.4434L100 2.88675L184.103 51.4434V148.557L100 197.113L15.8975 148.557V51.4434Z"
+              stroke-width="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="logo-text"
+              d="M63.6526 117V83.4H68.7886L83.4766 107.928H80.7886L95.2366 83.4H100.373L100.421 117H94.5166L94.4686 92.664H95.7166L83.4286 113.16H80.6446L68.1646 92.664H69.6046V117H63.6526ZM125.048 117.48C122.488 117.48 120.104 117.064 117.896 116.232C115.72 115.368 113.816 114.168 112.184 112.632C110.584 111.064 109.336 109.224 108.44 107.112C107.544 105 107.096 102.696 107.096 100.2C107.096 97.704 107.544 95.4 108.44 93.288C109.336 91.176 110.6 89.352 112.232 87.816C113.864 86.248 115.768 85.048 117.944 84.216C120.12 83.352 122.504 82.92 125.096 82.92C127.848 82.92 130.36 83.4 132.632 84.36C134.904 85.288 136.824 86.68 138.392 88.536L134.36 92.328C133.144 91.016 131.784 90.04 130.28 89.4C128.776 88.728 127.144 88.392 125.384 88.392C123.624 88.392 122.008 88.68 120.536 89.256C119.096 89.832 117.832 90.648 116.744 91.704C115.688 92.76 114.856 94.008 114.248 95.448C113.672 96.888 113.384 98.472 113.384 100.2C113.384 101.928 113.672 103.512 114.248 104.952C114.856 106.392 115.688 107.64 116.744 108.696C117.832 109.752 119.096 110.568 120.536 111.144C122.008 111.72 123.624 112.008 125.384 112.008C127.144 112.008 128.776 111.688 130.28 111.048C131.784 110.376 133.144 109.368 134.36 108.024L138.392 111.864C136.824 113.688 134.904 115.08 132.632 116.04C130.36 117 127.832 117.48 125.048 117.48Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+
+        <nav class="nav navbar__nav">
+          <ul class="navbar__list">
+            <li><a href="index.html" class="navbar__item">Home</a></li>
+            <li><a href="portfolio.html" class="navbar__item">Portfolio</a></li>
+            <li><a href="contact.html" class="navbar__item">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="0">
+      <section class="projects" tabindex="0">
+        <div class="container">
+          <h2 class="projects__title">Projects</h2>
+
+          <ul class="projects__list projects-grid">
+            <li>
+              <div class="projects__icon">
+                <iconify-icon
+                  icon="simple-icons:dungeonsanddragons"
+                  class="icon-style"
+                ></iconify-icon>
+              </div>
+              <h3 class="projects__name">Dungeons & Dragons Blog</h3>
+
+              <p class="projects__info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptas aliquam ea eum perspiciatis modi beatae?
+              </p>
+
+              <a
+                href="https://corb0140.github.io/mad9013-project-two-page-site/"
+                class="projects__link"
+                target="_blank"
+              >
+                <span class="material-icons"> arrow_right_alt </span> Two Page
+                Site
+              </a>
+            </li>
+
+            <li>
+              <div class="projects__icon">
+                <iconify-icon
+                  icon="simple-icons:pexels"
+                  class="icon-style"
+                ></iconify-icon>
+              </div>
+              <h3 class="projects__name">Pexels Api</h3>
+
+              <p class="projects__info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptas aliquam ea eum perspiciatis modi beatae?
+              </p>
+
+              <a
+                href="https://corb0140.github.io/hybrid-js-fetch/"
+                class="projects__link"
+                target="_blank"
+              >
+                <span class="material-icons"> arrow_right_alt </span> Pexels Api
+              </a>
+            </li>
+
+            <li>
+              <div class="projects__icon">
+                <iconify-icon
+                  icon="simple-icons:pixabay"
+                  class="icon-style"
+                ></iconify-icon>
+              </div>
+              <h3 class="projects__name">Picture This Web App</h3>
+              <p class="projects__info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptas aliquam ea eum perspiciatis modi beatae?
+              </p>
+
+              <a
+                href="https://corb0140.github.io/final-project/"
+                class="projects__link"
+                target="_blank"
+              >
+                <span class="material-icons"> arrow_right_alt </span> Picture
+                This Web App
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <button class="to-top" id="to-top">
+      <span class="material-icons"> arrow_upward </span>
+    </button>
+
+    <footer class="footer" id="footer" tabindex="0">
+      <div class="container">
+        <a href="index.html" class="footer__logo"
+          ><svg
+            viewBox="0 0 200 200"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mark Corbin</title>
+            <path
+              class="logo-border"
+              d="M15.8975 51.4434L100 2.88675L184.103 51.4434V148.557L100 197.113L15.8975 148.557V51.4434Z"
+              stroke-width="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="logo-text"
+              d="M63.6526 117V83.4H68.7886L83.4766 107.928H80.7886L95.2366 83.4H100.373L100.421 117H94.5166L94.4686 92.664H95.7166L83.4286 113.16H80.6446L68.1646 92.664H69.6046V117H63.6526ZM125.048 117.48C122.488 117.48 120.104 117.064 117.896 116.232C115.72 115.368 113.816 114.168 112.184 112.632C110.584 111.064 109.336 109.224 108.44 107.112C107.544 105 107.096 102.696 107.096 100.2C107.096 97.704 107.544 95.4 108.44 93.288C109.336 91.176 110.6 89.352 112.232 87.816C113.864 86.248 115.768 85.048 117.944 84.216C120.12 83.352 122.504 82.92 125.096 82.92C127.848 82.92 130.36 83.4 132.632 84.36C134.904 85.288 136.824 86.68 138.392 88.536L134.36 92.328C133.144 91.016 131.784 90.04 130.28 89.4C128.776 88.728 127.144 88.392 125.384 88.392C123.624 88.392 122.008 88.68 120.536 89.256C119.096 89.832 117.832 90.648 116.744 91.704C115.688 92.76 114.856 94.008 114.248 95.448C113.672 96.888 113.384 98.472 113.384 100.2C113.384 101.928 113.672 103.512 114.248 104.952C114.856 106.392 115.688 107.64 116.744 108.696C117.832 109.752 119.096 110.568 120.536 111.144C122.008 111.72 123.624 112.008 125.384 112.008C127.144 112.008 128.776 111.688 130.28 111.048C131.784 110.376 133.144 109.368 134.36 108.024L138.392 111.864C136.824 113.688 134.904 115.08 132.632 116.04C130.36 117 127.832 117.48 125.048 117.48Z"
+              fill="white"
+            /></svg
+        ></a>
+
+        <nav class="nav footer__nav">
+          <ul class="footer__list">
+            <li>
+              <a href="index.html" class="footer__item">Home</a>
+            </li>
+            <li>
+              <a href="portfolio.html" class="footer__item active">Portfolio</a>
+            </li>
+            <li>
+              <a href="contact.html" class="footer__item">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__notice">
+          <small>&copy; Mark Corbin </small>
+          <small>corb0140@algonquinlive.com</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>
