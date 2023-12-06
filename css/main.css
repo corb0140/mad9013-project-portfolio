@@ -444,7 +444,7 @@ svg {
   --text-align: center;
 
   background-image: linear-gradient(to bottom, #0009, #0009),
-    url("/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+    url("../images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
 
   background-position: center;
   background-size: cover;
