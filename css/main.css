@@ -134,11 +134,12 @@ select {
   font-size: inherit;
   text-transform: uppercase;
   font-weight: bold;
-  transition: 0.2s;
+  transition: 0.4s;
+  border-radius: 1.5em 0 1.5em 0;
 }
 
 .btn:is(:hover, :focus-visible) {
-  border-radius: 2em 0 2em 0;
+  border-radius: 0 1.5em 0 1.5em;
   color: var(--secondary-color);
 }
 
@@ -152,7 +153,6 @@ h3 {
 
 h1 {
   font-size: 1.802rem;
-  margin: 0;
 }
 
 h2 {
@@ -161,6 +161,16 @@ h2 {
 
 h3 {
   font-size: 1.424rem;
+}
+
+@media only screen and (min-width: 45em) {
+  h2 {
+    font-size: 1.802rem;
+  }
+
+  h3 {
+    font-size: 1.528rem;
+  }
 }
 
 /* ------ ACCESSABILITY ------ */
@@ -238,10 +248,14 @@ h3 {
   text-decoration: none;
 }
 
+.navbar__title {
+  margin: 0;
+}
+
 .navbar__logo {
   display: inline-flex;
 
-  padding: 0.3rem 0;
+  padding-bottom: 1rem;
 }
 
 svg {
@@ -300,11 +314,6 @@ svg {
   padding: 1rem 0;
 }
 
-.navbar__item:is(:hover, :focus-visible) {
-  background-color: var(--secondary-color);
-  color: var(--dominant-color);
-}
-
 /*********** FOOTER STYLING ************/
 
 .footer {
@@ -317,17 +326,21 @@ svg {
 .footer .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 0;
 }
 
 .footer__logo {
   display: inline-flex;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.55rem;
 }
 
 .footer__logo:is(:hover, :focus-visible) {
   color: var(--secondary-color);
+}
+
+.footer__nav {
+  width: 100%;
 }
 
 .footer__list {
@@ -353,10 +366,6 @@ svg {
   transition: 0.2s;
 }
 
-/* .footer__item:is(:hover, :focus-visible) {
-  color: var(--accent-color);
-} */
-
 .active {
   background-color: var(--secondary-color);
   color: #000;
@@ -373,18 +382,6 @@ svg {
 }
 
 @media only screen and (min-width: 45em) {
-  h1 {
-    font-size: 2.074rem;
-  }
-
-  h2 {
-    font-size: 1.802rem;
-  }
-
-  h3 {
-    font-size: 1.528rem;
-  }
-
   .navbar .container {
     flex-direction: row;
     justify-content: space-between;
@@ -392,7 +389,9 @@ svg {
   }
 
   .navbar__logo {
-    margin: 0;
+    display: inline-flex;
+
+    padding: 0.5rem 0;
   }
 
   .navbar__nav {
@@ -406,7 +405,7 @@ svg {
 
   .navbar__item {
     width: 8rem;
-    padding: 2rem 0;
+    padding: 1.8rem 0;
   }
 
   .navbar__list.column {
@@ -419,12 +418,9 @@ svg {
     padding: 1rem 1.5rem;
   }
 
-  .footer__logo {
-    margin: 0;
-  }
-
   .footer__nav {
     border-left: 0.25em solid var(--secondary-color);
+    width: unset;
   }
 
   .footer__item {
@@ -447,7 +443,11 @@ svg {
   --banner-vertical-align: center;
   --text-align: center;
 
-  background-image: linear-gradient(to right top, #1e2019 10%, #071013e5 70%);
+  background-image: linear-gradient(to bottom, #0009, #0009),
+    url("/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+
+  background-position: center;
+  background-size: cover;
 
   display: flex;
   min-height: var(--banner-height);
@@ -462,6 +462,10 @@ svg {
   justify-content: var(--banner-horizontal-align);
   align-items: var(--banner-vertical-align);
   text-align: var(--text-align);
+}
+
+.banner__title {
+  color: var(--secondary-color);
 }
 
 .banner__content {
@@ -536,7 +540,7 @@ svg {
 .card__text {
   text-align: center;
   margin: 0;
-  padding: 1rem 0.625rem;
+  padding: 1rem 1.25rem;
 }
 
 @media only screen and (min-width: 45em) {
@@ -557,8 +561,11 @@ svg {
     --text-align: left;
   }
 
+  .banner__title {
+    font-size: 3.042rem;
+  }
+
   .banner__content {
-    border: 0.55em solid white;
     padding: 1.5rem 1rem;
     width: 70%;
   }
@@ -592,6 +599,8 @@ svg {
 
   display: flex;
   flex-direction: column;
+
+  border-radius: 1.5rem 0rem 1.5rem 0;
 }
 
 .projects__icon {
@@ -603,6 +612,7 @@ svg {
   width: 100%;
 
   background-color: var(--secondary-color);
+  border-top-left-radius: 1.5rem;
 }
 
 .icon-style {
@@ -674,8 +684,8 @@ svg {
   --min-height: 90vh;
   position: relative;
   background-color: var(--secondary-color);
-  border-radius: 0.825em;
   min-height: var(--min-height);
+  border-radius: 1.5rem 0 1.5rem 0;
 }
 
 /*********** INFO ************/
@@ -687,8 +697,7 @@ svg {
   position: absolute;
   bottom: 0;
 
-  border-bottom-left-radius: 0.825em;
-  border-bottom-right-radius: 0.825em;
+  border-bottom-right-radius: 1.5rem;
   color: var(--off-white-color);
 
   padding: 2rem 1.5rem 0.5rem;
@@ -740,6 +749,9 @@ svg {
 
   padding: 2.5rem;
   align-items: center;
+
+  border-top-left-radius: 1.5rem;
+  /* border-bottom-right-radius: 1.5rem; */
 }
 
 .form-unit {
@@ -822,7 +834,8 @@ textarea:is(:focus-visible, :valid) {
     left: 0;
     height: 100%;
     width: 50%;
-    border-radius: 0.825em;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
   }
 
   .contact-form {

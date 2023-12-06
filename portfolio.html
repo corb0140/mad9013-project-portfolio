@@ -50,9 +50,15 @@
 
         <nav class="nav navbar__nav">
           <ul class="navbar__list">
-            <li><a href="index.html" class="navbar__item">Home</a></li>
-            <li><a href="portfolio.html" class="navbar__item">Portfolio</a></li>
-            <li><a href="contact.html" class="navbar__item">Contact</a></li>
+            <li><a href="index.html" class="navbar__item item">Home</a></li>
+            <li>
+              <a href="portfolio.html" class="navbar__item item active"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="navbar__item item">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -61,7 +67,7 @@
     <main id="main" tabindex="0">
       <section class="projects" tabindex="0">
         <div class="container">
-          <h2 class="projects__title">Projects</h2>
+          <h1 class="projects__title">Projects</h1>
 
           <ul class="projects__list projects-grid">
             <li>
@@ -74,8 +80,8 @@
               <h3 class="projects__name">Dungeons & Dragons Blog</h3>
 
               <p class="projects__info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptas aliquam ea eum perspiciatis modi beatae?
+                Two page blog providing recommendations, tips and tricks on
+                dungeons and dragons game.
               </p>
 
               <a
@@ -83,8 +89,8 @@
                 class="projects__link"
                 target="_blank"
               >
-                <span class="material-icons"> arrow_right_alt </span> Two Page
-                Site
+                <span class="material-icons"> arrow_right_alt </span> Dungeons &
+                Dragons Blog
               </a>
             </li>
 
@@ -98,8 +104,8 @@
               <h3 class="projects__name">Pexels Api</h3>
 
               <p class="projects__info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptas aliquam ea eum perspiciatis modi beatae?
+                Grab photos from pexels with pexels Api and create a gallery
+                using a combination of javascript and fetch.
               </p>
 
               <a
@@ -120,8 +126,8 @@
               </div>
               <h3 class="projects__name">Picture This Web App</h3>
               <p class="projects__info">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptas aliquam ea eum perspiciatis modi beatae?
+                Grab photos from pixabay using pixabay Api and detect faces in
+                those pictures using machine learning.
               </p>
 
               <a
@@ -168,13 +174,15 @@
         <nav class="nav footer__nav">
           <ul class="footer__list">
             <li>
-              <a href="index.html" class="footer__item">Home</a>
+              <a href="index.html" class="footer__item item">Home</a>
             </li>
             <li>
-              <a href="portfolio.html" class="footer__item active">Portfolio</a>
+              <a href="portfolio.html" class="footer__item item active"
+                >Portfolio</a
+              >
             </li>
             <li>
-              <a href="contact.html" class="footer__item">Contact</a>
+              <a href="contact.html" class="footer__item item">Contact</a>
             </li>
           </ul>
         </nav>

@@ -15,19 +15,19 @@ toTopBtn.addEventListener("click", () => {
   });
 });
 
-let activeItem = document.querySelectorAll(".footer__item");
+let activeItem = document.querySelectorAll(".item");
 
 activeItem.forEach((item) => {
   item.addEventListener("mouseenter", (ev) => {
     if (!ev.target.classList.contains("active")) {
-      ev.target.style.scale = "1.10";
+      ev.target.style.transition = ".2s";
       ev.target.style.color = "#ffc857";
     }
   });
 
   item.addEventListener("mouseout", (ev) => {
     if (!ev.target.classList.contains("active")) {
-      ev.target.style.scale = "1";
+      ev.target.style.transition = ".5s";
       ev.target.style.color = "#fafafa";
     }
   });
