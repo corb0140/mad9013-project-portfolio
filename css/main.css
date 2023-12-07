@@ -332,7 +332,7 @@ svg {
 
 .footer__logo {
   display: inline-flex;
-  margin-bottom: 0.55rem;
+  margin-bottom: 1rem;
 }
 
 .footer__logo:is(:hover, :focus-visible) {
@@ -390,7 +390,6 @@ svg {
 
   .navbar__logo {
     display: inline-flex;
-
     padding: 0.5rem 0;
   }
 
@@ -414,8 +413,13 @@ svg {
 
   .footer .container {
     flex-direction: row;
+    align-items: start;
     justify-content: space-between;
     padding: 1rem 1.5rem;
+  }
+
+  .footer__logo {
+    margin: 0;
   }
 
   .footer__nav {
